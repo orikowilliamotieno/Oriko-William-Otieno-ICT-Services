@@ -5,138 +5,239 @@
     <title>Oriko William Otieno | ICT Services</title>
     <meta name="author" content="Oriko William Otieno">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Disable code inspection -->
+    <script>
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        document.addEventListener('keydown', e => {
+            if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && ['I', 'C', 'J', 'U'].includes(e.key))) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
+        }
+        html, body {
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
-            color: #333;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background: #f4f4f4;
+        }
+        .section {
+            height: calc(100vh / 3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .pink-bg {
+            background-color: pink;
+            color: black;
+        }
+        .green-bg {
+            background-color: #2ecc71;
+            color: white;
+        }
+        .blue-bg {
+            background-color: lightblue;
+            color: black;
         }
         header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
             text-align: center;
+            margin-bottom: 10px;
         }
         nav {
-            background: #34495e;
-            overflow: auto;
+            margin-top: 10px;
         }
         nav a {
-            display: inline-block;
-            color: white;
+            margin: 0 10px;
             text-decoration: none;
-            padding: 14px 16px;
+            color: #000;
+            font-weight: bold;
         }
         nav a:hover {
-            background: #1abc9c;
+            text-decoration: underline;
         }
-        .container {
-            padding: 20px;
-        }
-        .about, .service {
+        .card {
             background: white;
-            margin: 20px 0;
+            margin: 10px 0;
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 10px;
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            max-width: 1000px;
+            width: 100%;
         }
-        .about img, .service img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 20px;
+        .card img {
+            width: 160px;
+            height: 160px;
             border-radius: 8px;
+            margin-right: 20px;
+            object-fit: cover;
         }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card-content {
+            max-width: 800px;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .contact-form h3 {
+            margin-top: 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .contact-form button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #000;
+        }
+
         footer {
-            background: #2c3e50;
+            background: #222;
             color: white;
             text-align: center;
-            padding: 15px 0;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .card img {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Oriko William Otieno ICT Services</h1>
-    <p>Email: willioeotieno15@gmail.com | Phone: 0784151456 / 0703175110 | Location: Siaya Town</p>
-</header>
+<!-- TOP SECTION (PINK) -->
+<div class="section pink-bg">
+    <header>
+        <h1>Oriko William Otieno ICT Services</h1>
+        <p>Email: willioeotieno15@gmail.com | Phone: 0784151456 / 0703175110 | Location: Siaya Town</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="electronics.html">Electronics</a>
+            <a href="computers.html">Computer Repair</a>
+            <a href="cameras.html">Camera Repair</a>
+            <a href="systems.html">Systems Development</a>
+            <a href="training.html">IT Training</a>
+            <a href="services.html">Online Services</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+</div>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="electronics.html">Electronics</a>
-    <a href="computers.html">Computer Repair</a>
-    <a href="cameras.html">Camera Repair</a>
-    <a href="systems.html">Systems Development</a>
-    <a href="training.html">IT Training</a>
-    <a href="services.html">Online Services</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="faq.html">FAQ</a>
-</nav>
-
-<div class="container">
-
-    <section class="about">
+<!-- MIDDLE SECTION (GREEN) -->
+<div class="section green-bg">
+    <div class="card">
         <img src="william.png" alt="Oriko William">
-        <div>
-            <h2>About Me</h2>
+        <div class="card-content">
+            <h3>About Me</h3>
             <p>My name is Oriko William Otieno. I offer a wide range of ICT services tailored for individuals, institutions, businesses, and organizations. I am based in Siaya Town and committed to delivering reliable and professional ICT support.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="electronics.jpg" alt="Electronics">
-        <div>
+        <div class="card-content">
             <h3>Electronics Devices</h3>
             <p>Sales and consultancy on modern electronics including phones, tablets, TVs, and smart devices with expert guidance and setup support.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="computer_repair.jpg" alt="Computer Maintenance">
-        <div>
+        <div class="card-content">
             <h3>Computer Maintenance & Repair</h3>
             <p>We diagnose and fix hardware/software issues, upgrade systems, and offer preventive maintenance for desktops and laptops.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="camera_repair.jpg" alt="Camera Maintenance">
-        <div>
+        <div class="card-content">
             <h3>Camera Maintenance & Repair</h3>
             <p>Expert maintenance and repair of surveillance, DSLR, and digital cameras. Includes cleaning, sensor fixing, and diagnostics.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="systems.jpg" alt="System Development">
-        <div>
+        <div class="card-content">
             <h3>Systems Development</h3>
             <p>Custom web and desktop systems for businesses, corporates, and institutions including ERPs, MIS, POS, and inventory management.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="training.jpg" alt="Training">
-        <div>
+        <div class="card-content">
             <h3>Information Technology Training</h3>
             <p>We offer beginner to advanced training in computer literacy, programming, networking, and cybersecurity for institutions and individuals.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="service">
+    <div class="card">
         <img src="online_services.jpg" alt="Online Services">
-        <div>
+        <div class="card-content">
             <h3>Online Services</h3>
             <p>Delivery of online solutions including eCitizen support, exam registration, KRA services, school portals, and web research tasks.</p>
         </div>
-    </section>
+    </div>
+</div>
 
+<!-- BOTTOM SECTION (LIGHT BLUE) -->
+<div class="section blue-bg">
+    <div class="contact-form">
+        <h3>Contact Me</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Full Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </div>
 
 <footer>
