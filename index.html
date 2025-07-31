@@ -1,203 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Oriko William Otieno | ICT Services</title>
-    <meta name="author" content="Oriko William Otieno">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        .page {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-
-        .top-section {
-            background:#1abc9c;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .top-section nav {
-            margin-top: 10px;
-        }
-
-        .top-section nav a {
-            display: inline-block;
-            color: white;
-            background: #34495e;
-            text-decoration: none;
-            padding: 10px 15px;
-            margin: 2px;
-            border-radius: 4px;
-        }
-
-        .top-section nav a:hover {
-            background: #1abc9c;
-        }
-
-        .middle-section {
-            background: green;
-            color: white;
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
-
-        .bottom-section {
-            background: blueviolet;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .service, .about, .contact-info {
-            background: white;
-            color: black;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .about img, .service img {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            margin-right: 20px;
-            border-radius: 8px;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Oriko William Otieno | ICT Services</title>
+  <meta name="author" content="Oriko William Otieno">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .top-section {
+      background: #1abc9c;
+      padding: 20px;
+      text-align: center;
+    }
+    .top-section nav {
+      margin-top: 10px;
+    }
+    .top-section nav a {
+      display: inline-block;
+      color: white;
+      background: #34495e;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 2px;
+      border-radius: 4px;
+    }
+    .top-section nav a:hover {
+      background: #1abc9c;
+    }
+    .middle-section {
+      background: #e0f2f1;
+      color: black;
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+    .bottom-section {
+      background: blueviolet;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    .section-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+    .column {
+      flex: 1 1 calc(33.333% - 20px);
+      min-width: 280px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .column img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .service-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .service {
+      flex: 1 1 300px;
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: flex-start;
+    }
+    .service img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+    .contact-info {
+      margin-top: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <div class="page">
+  <div class="page">
 
-        <!-- Top: Header + Navigation -->
-        <div class="top-section">
-            <header>
-                <h1>Oriko William Otieno ICT Services</h1>
-                <p>Email: willioeotieno15@gmail.com | Phone: 0784151456 / 0703175110 | Location: Siaya Town</p>
-            </header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="electronics.html">Electronics</a>
-                <a href="computers.html">Computer Repair</a>
-                <a href="cameras.html">Camera Repair</a>
-                <a href="systems.html">Systems Development</a>
-                <a href="training.html">IT Training</a>
-                <a href="services.html">Online Services</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="faq.html">FAQ</a>
-            </nav>
-        </div>
-
-        <!-- Middle: Content -->
-        <div class="middle-section">
-            <div class="container">
-
-                <section class="about">
-                    <img src="william.png" alt="Oriko William">
-                    <div>
-                        <h2>About Me</h2>
-                        <p>My name is Oriko William Otieno. I offer a wide range of ICT services tailored for individuals, institutions, businesses, and organizations. I am based in Siaya Town and committed to delivering reliable and professional ICT support. My focus is on providing solutions that not only meet immediate needs but also promote long-term growth and efficiency through innovation and smart technology.
-
-I am an ICT innovator and researcher passionate about using technology to create practical and sustainable solutions. With a strong foundation in systems development, network management, and digital transformation, I focus on addressing real-world challenges through technology. I believe that ICT is not just about tools and systems—it’s about solving problems, improving lives, and creating long-term impact.
-
-Over the years, I have led and contributed to several ICT projects aimed at improving service delivery, automating operations, and enhancing access to information. My work combines hands-on technical skills with research and innovation, allowing me to build systems that are both functional and adaptable. I’m especially driven by the opportunity to design digital solutions that meet the specific needs of institutions and communities.
-
-I’ve also had the privilege of serving in various leadership roles, including ICT Senator, Senate Speaker for SITSO, and Chairperson of the Peer Educators Club. These roles helped me sharpen my communication, planning, and leadership abilities. They also allowed me to work closely with teams, coordinate initiatives, and guide others toward common goals—all while applying ICT as a foundation for progress.
-
-As a researcher and community-focused professional, I concentrate on how technology can support self-sustaining development, particularly in areas such as education, enterprise, and governance. I enjoy mentoring others, collaborating with fellow innovators, and engaging in grassroots efforts. My mission is simple: to use ICT as a powerful tool for empowerment, transformation, and inclusive development across Siaya and beyond.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="electronics.jpg" alt="Electronics">
-                    <div>
-                        <h3>Electronics Devices</h3>
-                        <p>Sales and consultancy on modern electronics including phones, tablets, TVs, and smart devices with expert guidance and setup support.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="computer_repair.jpg" alt="Computer Maintenance">
-                    <div>
-                        <h3>Computer Maintenance & Repair</h3>
-                        <p>We diagnose and fix hardware/software issues, upgrade systems, and offer preventive maintenance for desktops and laptops.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="camera_repair.jpg" alt="Camera Maintenance">
-                    <div>
-                        <h3>Camera Maintenance & Repair</h3>
-                        <p>Expert maintenance and repair of surveillance, DSLR, and digital cameras. Includes cleaning, sensor fixing, and diagnostics.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="systems.jpg" alt="System Development">
-                    <div>
-                        <h3>Systems Development</h3>
-                        <p>Custom web and desktop systems for businesses, corporates, and institutions including ERPs, MIS, POS, and inventory management.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="training.jpg" alt="Training">
-                    <div>
-                        <h3>Information Technology Training</h3>
-                        <p>We offer beginner to advanced training in computer literacy, programming, networking, and cybersecurity for institutions and individuals.</p>
-                    </div>
-                </section>
-
-                <section class="service">
-                    <img src="online_services.jpg" alt="Online Services">
-                    <div>
-                        <h3>Online Services</h3>
-                        <p>Delivery of online solutions including eCitizen support, exam registration, KRA services, school portals, and web research tasks.</p>
-                    </div>
-                </section>
-
-                <section class="contact-info">
-                    <div>
-                        <h3>Contact Information</h3>
-                        <p>Name: Oriko William Otieno</p>
-                        <p>Email: willieotieno15@gmail.com</p>
-                        <p>Phone: 0784151456 / 0703175110</p>
-                        <p>Location: Siaya Town</p>
-                    </div>
-                </section>
-
-            </div>
-        </div>
-
-        <!-- Bottom: Footer -->
-        <div class="bottom-section">
-            <footer>
-                Designed and Developed By Oriko William Otieno. &copy; 2025
-            </footer>
-        </div>
-
+    <!-- Top Section -->
+    <div class="top-section">
+      <header>
+        <h1>Oriko William Otieno ICT Services</h1>
+        <p>Email: willieotieno15@gmail.com | Phone: 0784151456 / 0703175110 | Location: Siaya Town</p>
+      </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="electronics.html">Electronics</a>
+        <a href="computers.html">Computer Repair</a>
+        <a href="cameras.html">Camera Repair</a>
+        <a href="systems.html">Systems Development</a>
+        <a href="training.html">IT Training</a>
+        <a href="services.html">Online Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
     </div>
+
+    <!-- Middle Section -->
+    <div class="middle-section">
+      <div class="section-group">
+
+        <!-- Column 1: About Me -->
+        <div class="column">
+          <section class="about">
+            <img src="william.png" alt="Oriko William">
+            <h2>About Me</h2>
+            <p>My name is Oriko William Otieno. I offer a wide range of ICT services tailored for individuals, institutions, businesses, and organizations. I am based in Siaya Town and committed to delivering reliable and professional ICT support. My focus is on providing solutions that not only meet immediate needs but also promote long-term growth and efficiency through innovation and smart technology.</p>
+            <p>I am an ICT innovator and researcher passionate about using technology to create practical and sustainable solutions. With a strong foundation in systems development, network management, and digital transformation, I focus on addressing real-world challenges through technology.</p>
+            <p>Over the years, I have led and contributed to several ICT projects aimed at improving service delivery, automating operations, and enhancing access to information. I enjoy mentoring others, collaborating with fellow innovators, and engaging in community-based solutions.</p>
+          </section>
+        </div>
+
+        <!-- Column 2: ICT Services and Roles -->
+        <div class="column">
+          <h2>ICT Services Offered</h2>
+          <h3>ICT Services for Business</h3>
+          <ul>
+            <li>Network design and implementation</li>
+            <li>Server installation and management</li>
+            <li>Cloud computing solutions</li>
+            <li>Business software development (ERP, CRM)</li>
+            <li>Web and mobile app development</li>
+            <li>Data analysis and reporting systems</li>
+            <li>Cybersecurity services</li>
+            <li>Business process automation</li>
+            <li>Digital marketing and SEO</li>
+            <li>IT support and maintenance</li>
+          </ul>
+          <h3>ICT Technician Services</h3>
+          <ul>
+            <li>Technical support and troubleshooting</li>
+            <li>Maintain and repair ICT equipment</li>
+            <li>Install and configure systems</li>
+            <li>Manage backups and recovery</li>
+            <li>Network and security monitoring</li>
+            <li>System documentation and reporting</li>
+            <li>User training and guidance</li>
+            <li>Enforce cybersecurity practices</li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Why Choose Me -->
+        <div class="column">
+          <h2>Why Choose Me</h2>
+          <ul>
+            <li>Over 5 years of ICT experience</li>
+            <li>Passionate about community empowerment</li>
+            <li>Client-centered development approach</li>
+            <li>Fast turnaround and clear communication</li>
+            <li>Affordable and scalable solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ICT Services Grid -->
+      <h2 style="margin-top: 40px;">My ICT Services</h2>
+      <div class="service-row">
+        <div class="service">
+          <img src="electronics.jpg" alt="Electronics">
+          <div>
+            <h3>Electronics Devices</h3>
+            <p>Sales and consultancy on modern electronics including phones, tablets, TVs, and smart devices with expert guidance and setup support.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="computer_repair.jpg" alt="Computer Repair">
+          <div>
+            <h3>Computer Maintenance & Repair</h3>
+            <p>Diagnose and fix hardware/software issues, upgrade systems, and offer preventive maintenance for desktops and laptops.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="camera_repair.jpg" alt="Camera Maintenance">
+          <div>
+            <h3>Camera Maintenance & Repair</h3>
+            <p>Expert maintenance and repair of surveillance, DSLR, and digital cameras. Includes cleaning, sensor fixing, and diagnostics.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="systems.jpg" alt="System Development">
+          <div>
+            <h3>Systems Development</h3>
+            <p>Custom web and desktop systems including ERPs, MIS, POS, and inventory systems for businesses, corporates, and institutions.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="training.jpg" alt="Training">
+          <div>
+            <h3>IT Training</h3>
+            <p>Beginner to advanced training in computer literacy, programming, networking, and cybersecurity for institutions and individuals.</p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="online_services.jpg" alt="Online Services">
+          <div>
+            <h3>Online Services</h3>
+            <p>eCitizen support, KRA services, exam registration, school portals, and web research assistance delivered professionally and efficiently.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Name: Oriko William Otieno</p>
+        <p>Email: willieotieno15@gmail.com</p>
+        <p>Phone: 0784151456 / 0703175110</p>
+        <p>Location: Siaya Town</p>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="bottom-section">
+      <footer>
+        Designed and Developed By Oriko William Otieno. &copy; 2025
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
