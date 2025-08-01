@@ -398,5 +398,36 @@
       document.getElementById('projectDesc').textContent = projectPhotos[projectIndex].desc;
     }, 3000);
   </script>
+  <!-- Bottom Section -->
+<div class="bottom-section">
+  <footer>
+    Designed and Developed By Oriko William Otieno. &copy; 2025
+  </footer>
+</div>
+
+<!-- Disable Right-Click and Keyboard Shortcuts -->
+<script>
+  // Disable right-click menu
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+  });
+
+  // Disable certain key combinations
+  document.addEventListener('keydown', function (e) {
+    // F12
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+
+    // Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + Shift + C
+    if (
+      (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C')) ||
+      (e.ctrlKey && e.key === 'U') // Ctrl + U
+    ) {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
 </body>
 </html>
