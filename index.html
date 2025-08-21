@@ -423,10 +423,26 @@
   });
 </script>
     
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education Background</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        #container {
+            background-color: #fff;
+            max-width: 800px;
+            width: 100%;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         #educationContent {
             display: none;
             margin-top: 20px;
@@ -436,33 +452,47 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            margin-top: 10px;
         }
         a {
             text-decoration: none;
             color: blue;
         }
+        #profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px auto;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+        }
     </style>
 </head>
 <body>
-    <button onclick="showEducation()">View Education Background</button>
+    <div id="container">
+        <img id="profile-pic" src="your-picture.jpg" alt="Profile Picture">
 
-    <div id="educationContent">
-        <a href="education.html">Education Background</a>
-        <p>
-            My education background reflects a journey of growth, resilience, and determination, beginning at the primary level and steadily advancing into higher education with a strong focus on Information and Communication Technology (ICT). I began my formal education at Siaya Private under the District Adult Education program, where I pursued my primary studies from 2009 to 2016. At the end of this period, I successfully sat for the Kenya Certificate of Primary Education (KCPE) examinations and obtained 195 marks. This achievement marked an important milestone in my academic journey, providing me with the foundation to pursue further education.
-        </p>
-        <p>
-            Following my primary studies, I joined Nyadina Mixed Secondary School in 2017, where I undertook my secondary education. Over the course of four years, I committed myself to academic and personal growth, eventually completing my studies in 2020. I sat for the Kenya Certificate of Secondary Education (KCSE) examination and attained a mean grade of D+. Although the results posed some challenges, they did not deter me from my educational ambitions. Instead, they motivated me to focus on developing my skills, particularly in ICT, an area that had captured my interest and passion.
-        </p>
-        <p>
-            With the drive to further my studies, I enrolled at Siaya Institute of Technology in 2021, where I pursued a Craft Certificate in Information Communication Technology. This program gave me practical exposure to the fundamentals of ICT, including software, hardware, and technical support skills. I successfully completed this certificate program in 2023, equipping me with strong technical abilities and preparing me for higher levels of study. Building upon this foundation, I progressed to a Diploma in Information Communication Technology at the same institution. I have since successfully completed this diploma course in 2025, gaining advanced knowledge in areas such as networking, systems support, database management, and digital solutions. The diploma marked a major academic milestone, enhancing my qualifications and refining my technical expertise for the professional ICT environment.
-        </p>
-        <p>
-            In addition to formal schooling, I have taken part in other specialized training programs to strengthen my skills. In 2016, I enrolled at Jire Computer Services, where I completed a course in computer packages, gaining practical knowledge in essential applications and digital literacy. That same year, I attended Pendo Driving School and earned a driving license for vehicle classes BCE, demonstrating my adaptability in diverse learning environments. Later, in June 2023, I also undertook the Ajira Digital program facilitated by the ICT Authority at Siaya Institute of Technology, where I obtained a certificate of completion. This training enhanced my digital competence, particularly in online work and digital economy skills, further reinforcing my passion for ICT.
-        </p>
-        <p>
-            Through this combination of formal education, professional training, and practical exposure, my academic background has shaped me into a well-rounded individual who values continuous learning and self-improvement. Despite the challenges faced along the way, I have remained committed to advancing my knowledge and skills, particularly in ICT, and I am now fully equipped to contribute meaningfully to the professional world.
-        </p>
+        <button onclick="showEducation()">Education Background</button>
+
+        <div id="educationContent">
+            <a href="education.html">Education Background</a>
+            <p>
+                My education background reflects a journey of growth, resilience, and determination, beginning at the primary level and steadily advancing into higher education with a strong focus on Information and Communication Technology (ICT). I began my formal education at Siaya Private under the District Adult Education program, where I pursued my primary studies from 2009 to 2016. At the end of this period, I successfully sat for the Kenya Certificate of Primary Education (KCPE) examinations and obtained 195 marks. This achievement marked an important milestone in my academic journey, providing me with the foundation to pursue further education.
+            </p>
+            <p>
+                Following my primary studies, I joined Nyadina Mixed Secondary School in 2017, where I undertook my secondary education. Over the course of four years, I committed myself to academic and personal growth, eventually completing my studies in 2020. I sat for the Kenya Certificate of Secondary Education (KCSE) examination and attained a mean grade of D+. Although the results posed some challenges, they did not deter me from my educational ambitions. Instead, they motivated me to focus on developing my skills, particularly in ICT, an area that had captured my interest and passion.
+            </p>
+            <p>
+                With the drive to further my studies, I enrolled at Siaya Institute of Technology in 2021, where I pursued a Craft Certificate in Information Communication Technology. This program gave me practical exposure to the fundamentals of ICT, including software, hardware, and technical support skills. I successfully completed this certificate program in 2023, equipping me with strong technical abilities and preparing me for higher levels of study. Building upon this foundation, I progressed to a Diploma in Information Communication Technology at the same institution. I have since successfully completed this diploma course in 2025, gaining advanced knowledge in areas such as networking, systems support, database management, and digital solutions. The diploma marked a major academic milestone, enhancing my qualifications and refining my technical expertise for the professional ICT environment.
+            </p>
+            <p>
+                In addition to formal schooling, I have taken part in other specialized training programs to strengthen my skills. In 2016, I enrolled at Jire Computer Services, where I completed a course in computer packages, gaining practical knowledge in essential applications and digital literacy. That same year, I attended Pendo Driving School and earned a driving license for vehicle classes BCE, demonstrating my adaptability in diverse learning environments. Later, in June 2023, I also undertook the Ajira Digital program facilitated by the ICT Authority at Siaya Institute of Technology, where I obtained a certificate of completion. This training enhanced my digital competence, particularly in online work and digital economy skills, further reinforcing my passion for ICT.
+            </p>
+            <p>
+                Through this combination of formal education, professional training, and practical exposure, my academic background has shaped me into a well-rounded individual who values continuous learning and self-improvement. Despite the challenges faced along the way, I have remained committed to advancing my knowledge and skills, particularly in ICT, and I am now fully equipped to contribute meaningfully to the professional world.
+            </p>
+        </div>
     </div>
 
     <script>
@@ -475,6 +505,7 @@
             }
         }
     </script>
+
 
     
 </body>
