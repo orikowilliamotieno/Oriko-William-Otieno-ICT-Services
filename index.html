@@ -123,7 +123,7 @@
       <nav>
         <a href="index.html">Home</a>
         <a href="electronics.html">Electronics</a>
-        <button onclick="showEducation()">View Education Background</button>
+        <button onclick="showEducation()">Education Background</button>
         <a href="computers.html">Computer Repair</a>
         <a href="cameras.html">Camera Repair</a>
         <a href="systems.html">Systems Development</a>
@@ -423,6 +423,8 @@
   });
 </script>
     
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education Background</title>
     <style>
         body {
@@ -439,9 +441,9 @@
             padding: 20px 30px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: none; /* hide initially */
         }
         #educationContent {
-            display: none;
             margin-top: 20px;
             line-height: 1.6;
         }
@@ -449,7 +451,6 @@
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            margin-top: 10px;
         }
         a {
             text-decoration: none;
@@ -465,12 +466,11 @@
             border: 3px solid #007BFF;
         }
     </style>
-    
-<body>
-    <div id="container">
-        <img id="profile-pic" src="william.png" alt="Profile Picture">
 
-        <button onclick="showEducation()">Education Background</button>
+    <button onclick="showEducation()">Education Background</button>
+
+    <div id="container">
+        <img id="profile-pic" src="your-picture.jpg" alt="Profile Picture">
 
         <div id="educationContent">
             <a href="education.html">Education Background</a>
@@ -494,17 +494,14 @@
 
     <script>
         function showEducation() {
-            var content = document.getElementById("educationContent");
-            if (content.style.display === "none") {
-                content.style.display = "block";
+            var container = document.getElementById("container");
+            if (container.style.display === "none" || container.style.display === "") {
+                container.style.display = "block";
             } else {
-                content.style.display = "none";
+                container.style.display = "none";
             }
         }
     </script>
 
-
-    
-</body>
-</body>
+  
 </html>
